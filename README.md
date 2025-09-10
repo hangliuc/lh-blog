@@ -133,4 +133,4 @@ $ git clone git@github.com:lql95/lql-notes.git
 
 ![image_20220721_165020](https://cdn.jsdelivr.net/gh/eryajf/tu/img/image_20220721_165020.png)
 
-剩下的就是一些细节的优化调整，稍微打磨之后，就可以愉快地撰写你的博客了。
+剩下的就是一些细节的优化调整，稍微打磨之后，就可以愉快地撰写你的博客了....
