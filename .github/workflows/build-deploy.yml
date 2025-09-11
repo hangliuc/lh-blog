@@ -28,3 +28,12 @@ jobs:
         with:
           folder: docs/.vuepress/dist
           branch: blog-deploy # 部署到的分支
+      - name: deploy file to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: "root" #ssh user name
+          port: "22" # 远程服务器ssh端口，默认22
+          server: "35.220.243.111" 
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} # 认证服务器秘钥对的私钥
+          local_path: "docs/.vuepress/dist/*" # 对应我们项目打包后的静态文件路径
+          remote_path: "/home/lh/blog" 
